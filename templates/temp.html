@@ -2,13 +2,37 @@
 <html lang="en">
 <head>
 	<title> Home Page </title>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="temp.css">
+  
+  
 </head>
-		
+	
+
+
 <body>
-	<ul class=entry>
+
+	<header class = "container">
+		
+		<h2 align = "center"> My Friends </h2>
+	</div>
+	</header>
+
+
+	<section class = "jumbotron">
+	<table>
+  <tr>
+    <th>Firstname</th>
+  </tr>
+
 	{% for entry in entries %}
-		<h2> {{ entry }} </h2>
+		<tr>
+			<td> {{entry}} </td>
+		</tr>
 	{% endfor %}
+	</table>
+</section>
 
 </body>
 </html>
