@@ -29,7 +29,7 @@ def main():
     
     #friends = [str(api.get_user(x).screen_name) for x in api.followers_ids(me.id)][:10]
     
-    friends = ', '.join(str(api.get_user(x).screen_name) for x in api.followers_ids(me.id))
+    friends = list(str(api.get_user(x).screen_name) for x in api.followers_ids(me.id))
     #print(friends)
     #return str(api.followers_ids(me.id)[0])
     #str(followers(me.id)
